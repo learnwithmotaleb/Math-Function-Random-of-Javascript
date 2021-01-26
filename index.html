@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript learning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+
+<script>
+    var numofwon=0;
+    var numofloss=0;
+
+for(var i=0; i<=5; i++){
+    var gessNumber=parseInt(prompt("Enter a Number from 1 to 5 :"));
+var randomNumber =Math.floor(Math.random()*5)+1;
+if(gessNumber===randomNumber){
+    document.write("<br/>");
+    document.write("You Have WON !");
+    numofwon++;
+}else{
+    document.write("<br/>");
+
+    document.write("You Have Loss.Random Number was = "+randomNumber);
+    numofloss++;
+}
+
+}
+document.write("<br/>");
+document.write("Total Number of Won = "+numofwon+"<br/>");
+document.write("Total Number of Loss = "+numofloss);
+</script>
+<br/>
+<!-- <cite>The Array of the function in the looping and the Addition of the Array__</cite> -->
+    <script src="index.js"></script>
+</body>
+</html>
